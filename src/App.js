@@ -21,6 +21,7 @@ function App() {
   const fieldGoal = e => {
     console.log(e.target.className);
     if (e.target.className === "homeButtons__fieldGoal") {
+      setHomeScore(homeScore + 3);
     } else if (e.target.className === "awayButtons__fieldGoal") {
       setAwayScore(awayScore + 3);
     }

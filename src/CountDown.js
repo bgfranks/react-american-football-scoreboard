@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function CountDown({ minutes = 1, seconds = 0 }) {
+function CountDown({ minutes = 5, seconds = 0 }) {
   const [over, setOver] = useState(false);
   const [time, setTime] = useState({
     minutes: minutes,
